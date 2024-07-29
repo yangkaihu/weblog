@@ -1,0 +1,24 @@
+{
+  "name": "wblog_admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.7.7",
+    "path": "^0.12.7",
+    "sass": "^1.77.8",
+    "sass-loader": "^15.0.0",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.4"
+  }
+}

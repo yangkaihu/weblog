@@ -1,0 +1,241 @@
+.conten-header {
+    background-color: #f8f9fa66;
+    border-bottom: solid 1px var(--el-border-color);
+    display: flex;
+    align-items: center;
+    height: 45px;
+    boxSizing: 'border-box';
+    position: fixed;
+    top: 0;
+    zIndex: '999';
+    width: 100vw;
+
+    .el-menu {
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        position: relative;
+
+        .el-menu-item {
+            align-items: center;
+            border-bottom: 2px solid transparent;
+            color: var(--el-menu-text-color);
+            display: inline-flex;
+            height: 100%;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .el-sub-menu {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+
+            .el-sub-menu__title {
+                border-bottom: 2px solid transparent;
+                color: var(--el-menu-text-color);
+                height: 100%;
+            }
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+    }
+    .menu {
+        background-color: #f8f9fa00;
+        height: 45px;
+
+        .el-link {
+            align-items: center;
+            color: var(--el-link-text-color);
+            cursor: pointer;
+            display: inline-flex;
+            flex-direction: row;
+            font-size: var(--el-link-font-size);
+            font-weight: var(--el-link-font-weight);
+            justify-content: center;
+            outline: none;
+            padding: 0;
+            position: relative;
+            text-decoration: none;
+            vertical-align: middle;
+
+            .el-link__inner {
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --color: hsl(0, 0%, 87%);
+    --animation: 2s ease-in-out infinite;
+}
+
+.loader .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: solid 2px var(--color);
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: transparent;
+    animation: circle-keys var(--animation);
+}
+
+.loader .circle .dot {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color);
+    animation: dot-keys var(--animation);
+}
+
+.loader .circle .outline {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: outline-keys var(--animation);
+}
+
+.circle:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.circle:nth-child(2) .dot {
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) .dot {
+    animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) .dot {
+    animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) .dot {
+    animation-delay: 1.2s;
+}
+
+.circle:nth-child(1) .outline {
+    animation-delay: 0.9s;
+}
+
+.circle:nth-child(2) .outline {
+    animation-delay: 1.2s;
+}
+
+.circle:nth-child(3) .outline {
+    animation-delay: 1.5s;
+}
+
+.circle:nth-child(4) .outline {
+    animation-delay: 1.8s;
+}
+
+.circle:nth-child(5) .outline {
+    animation-delay: 2.1s;
+}
+
+@keyframes circle-keys {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes dot-keys {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes outline-keys {
+    0% {
+        transform: scale(0);
+        outline: solid 20px var(--color);
+        outline-offset: 0;
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        outline: solid 0 transparent;
+        outline-offset: 20px;
+        opacity: 0;
+    }
+}
+/*静态图片动态化*/
+.hu__hu__ {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("@/assets/images/login_bg.png");
+    background-size: cover;
+}
+.arrow-down {
+    position: absolute;
+    bottom: 15vh;
+    animation: arrow-shake-82ce1b0c 1.5s ease-out infinite;
+    cursor: pointer;
+    z-index: 8;
+}
+
+
+
+
+
+
+
+
