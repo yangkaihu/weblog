@@ -1,16 +1,16 @@
 <template class="higth" style="overflow-y: visible">
-
-  <div class="cssanimation hu__hu__">
-
+  <body class="mobile">
+  <div class="page page-1 active">
     <div class="conten-header">
 
       <div class="el-menu el-menu--horizontal menu" role="menubar" style="--el-menu-level: 0; width: 100%;border: none">
-         <div></div>
+        <div></div>
         <div>weblog</div>
+
         <div class="el-menu el-menu--horizontal menu" role="menubar"
              style="--el-menu-level: 0; width: 90%;border: none">
 
-        <span class="el-menu-item " role="menuitem" tabindex="0">
+        <span class="el-menu-item " role="menuitem" tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
 
             <i class="el-icon">
               <svg data-v-ae089293="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
@@ -20,14 +20,16 @@
 
         </span>
 
-          <span class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false" tabindex="0">
+          <span class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false" tabindex="0"
+                style="background-color: rgba(248, 249, 250, 0.4)">
           <div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger"><i data-v-ae089293=""
                                                                                      class="el-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
               <path fill="currentColor"
                     d="M128 384v448h768V384zm-32-64h832a32 32 0 0 1 32 32v512a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V352a32 32 0 0 1 32-32m64-128h704v64H160zm96-128h512v64H256z"></path>
             </svg>
-          </i> 归档 <i class="el-icon el-sub-menu__icon-arrow" style="transform: none;">
+          </i> 归档 <i class="el-icon el-sub-menu__icon-arrow"
+                       style="transform: none ; background-color: rgba(248, 249, 250, 0.4)">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
               <path fill="currentColor"
                     d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path>
@@ -36,7 +38,7 @@
           </div>
         </span>
           <span class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false"
-                tabindex="0">
+                tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
           <div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">
             <i class="el-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
@@ -51,7 +53,7 @@
           </i>
           </div>
         </span>
-          <span class="el-menu-item" role="menuitem" tabindex="0">
+          <span class="el-menu-item" role="menuitem" tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
           <i class="el-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
               <path fill="currentColor"
@@ -59,7 +61,7 @@
             </svg>
           </i> 友链
         </span>
-          <span class="el-menu-item" role="menuitem" tabindex="0">
+          <span class="el-menu-item" role="menuitem" tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
           <i class="el-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
               <path fill="currentColor"
@@ -77,20 +79,15 @@
       </div>
 
     </div>
-
-
   </div>
-
+  <div class="page page-2"></div>
+  </body>
 </template>
 
 <script setup>
-
 import {reactive, ref} from "vue"
 import "@/assets/css/login.css"
 
-
-const fromData = reactive({});
-const checkCodeUrl = "api/checkCode"
 
 const scrollDown = () => {
   window.scrollTo({
