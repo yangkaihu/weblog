@@ -1,0 +1,16 @@
+{
+  "id": "4639476",
+  "name": "首页",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10704952",
+      "name": "首页",
+      "font_class": "shouyex",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
