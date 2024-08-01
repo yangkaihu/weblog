@@ -21,7 +21,7 @@
 .el-menu.el-menu-horizontal {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+  justify-content: space-between;
     top: 10px;
     width: 95%;
     left: 30px;
