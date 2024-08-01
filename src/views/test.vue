@@ -13,12 +13,23 @@
       <div class="el-menu el-menu--horizontal menu" role="menubar"
            style="--el-menu-level: 0; width: 90%;border: none">
 
-
-
-        <span class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false" tabindex="0"
+        <div class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false" tabindex="0"
               style="background-color: rgba(248, 249, 250, 0.4)">
-
-        </span>
+          <span class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger"><i data-v-ae089293=""
+                                                                                     class="el-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+              <path fill="currentColor"
+                    d="M128 384v448h768V384zm-32-64h832a32 32 0 0 1 32 32v512a32 32 0 0 1-32 32H96a32 32 0 0 1-32-32V352a32 32 0 0 1 32-32m64-128h704v64H160zm96-128h512v64H256z"></path>
+            </svg>
+          </i> 归档 <i class="el-icon el-sub-menu__icon-arrow"
+                       style="transform: none ; background-color: rgba(248, 249, 250, 0.4)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+              <path fill="currentColor"
+                    d="M831.872 340.864 512 652.672 192.128 340.864a30.592 30.592 0 0 0-42.752 0 29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728 30.592 30.592 0 0 0-42.752 0z"></path>
+            </svg>
+          </i>
+          </span>
+        </div>
         <span class="el-sub-menu" role="menuitem" ariahaspopup="true" aria-expanded="false"
               tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
           <div class="el-sub-menu__title el-tooltip__trigger el-tooltip__trigger">
@@ -35,14 +46,7 @@
           </i>
           </div>
         </span>
-        <span class="el-menu-item" role="menuitem" tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
-          <i class="el-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-              <path fill="currentColor"
-                    d="M715.648 625.152 670.4 579.904l90.496-90.56c75.008-74.944 85.12-186.368 22.656-248.896-62.528-62.464-173.952-52.352-248.96 22.656L444.16 353.6l-45.248-45.248 90.496-90.496c100.032-99.968 251.968-110.08 339.456-22.656 87.488 87.488 77.312 239.424-22.656 339.456l-90.496 90.496zm-90.496 90.496-90.496 90.496C434.624 906.112 282.688 916.224 195.2 828.8c-87.488-87.488-77.312-239.424 22.656-339.456l90.496-90.496 45.248 45.248-90.496 90.56c-75.008 74.944-85.12 186.368-22.656 248.896 62.528 62.464 173.952 52.352 248.96-22.656l90.496-90.496zm0-362.048 45.248 45.248L398.848 670.4 353.6 625.152z"></path>
-            </svg>
-          </i> 友链
-        </span>
+
         <span class="el-menu-item" role="menuitem" tabindex="0" style="background-color: rgba(248, 249, 250, 0.4)">
           <i class="el-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
@@ -62,10 +66,6 @@
 
   </div>
 </div>
-<!--
-  <div class="page page-2">
-
-  </div>-->
 
 </body>
 <script setup>
