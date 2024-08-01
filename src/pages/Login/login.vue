@@ -30,7 +30,7 @@
 
 <script setup lang="js">
 import {reactive, ref} from "vue"
-import "@/assets/css/login.css"
+import "@/pages/Login/login.css"
 
 const scrollDown = () => {
   window.scrollTo({
